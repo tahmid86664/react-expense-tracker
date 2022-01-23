@@ -17,6 +17,7 @@
 }
 
 .history__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 12px 10px;
@@ -24,6 +25,45 @@
   box-shadow: 2px 6px 6px -3px rgba(0, 0, 0, 0.45);
   -webkit-box-shadow: 2px 6px 6px -3px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 2px 6px 6px -3px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.history__item:hover > .history__delete {
+  display: block;
+}
+
+.history__delete {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: #ffa6a6;
+  top: 0;
+  left: -40px;
+  border-radius: 15px 0 0 15px;
+  transition: all 0.4s ease;
+}
+
+.history__delete > .cross {
+  position: inherit;
+  top: 20px;
+  left: 7px;
+}
+
+.history__delete > .cross > .cross1 {
+  position: inherit;
+  background-color: #ff0000;
+  width: 30px;
+  height: 3px;
+  transform: rotate(45deg);
+}
+
+.history__delete > .cross > .cross2 {
+  position: inherit;
+  background-color: #ff0000;
+  width: 30px;
+  height: 3px;
+  transform: rotate(-45deg);
 }
 
 .cash__add {
