@@ -14,6 +14,7 @@
 .addNewTransaction__body > form {
   display: flex;
   flex-direction: column;
+  text-transform: capitalize;
 }
 
 .addNewTransaction__body > form > span {
@@ -32,9 +33,9 @@
   background-color: #013b92;
   color: white;
   font-size: larger;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border: none;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
